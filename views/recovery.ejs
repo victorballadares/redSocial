@@ -1,0 +1,10 @@
+<%- include('templates/header'); %>
+
+<main>
+    <h1>Recuperar contraseña</h1>
+
+    <form action="/user/recovery" method="post">
+        <input type="email" name="email" placeholder="Introduce tu email">
+        <button>Enviar</button>
+    </form>
+</main>

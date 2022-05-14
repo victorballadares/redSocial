@@ -1,0 +1,20 @@
+<%- include('templates/header'); %>
+<main>
+    <h1>Sign Up</h1>
+
+    <div>
+        <form action="/user/signUp" method="post">
+
+            <input type="text" name ="firstName" placeholder="First Name" required>
+            <input type="text" name="lastName" placeholder="Last Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="repeatPassword" placeholder="Repeat password" required>
+            <button >Sign Up</button>
+
+        </form>
+    </div>
+
+
+
+</main> 

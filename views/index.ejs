@@ -1,13 +1,34 @@
-<%- include('templates/header'); %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red social</title>
+    <link rel="stylesheet" href="/style.css">
+    
+</head>
+<body>
 
-    <h1>Rivas Roller</h1>
+    <main>
+        <h1>Rivas Roller</h1>
 
-    <form>
-        <input id="user"  type="text" placeholder="Introduce tu usuario" required>
-        <input id="password" type="password" placeholder="Introduce tu password" required>
-        <button>Entrar</button>
         
-    </form>
+            <form action="/user/signIn" method="post">
+                <input id="user" type="text" name="email" placeholder="Introduce tu usuario" required>
+                <input id="password" type="password" name="password" placeholder="Introduce tu password" required>
+                <button>Sign in</button>
+            </form>
+            <button onclick="window.location.href='/user/recovery'">Recover password</button>
+        
 
+        <div>
+            <button onclick="window.location.href='/user/new'">Sign Up</button>
+        </div>
 
-
+        <div>
+            <button>Sign in with Google</button>
+            <button>Sign in with Github</button>
+        </div>
+        
+    </main>

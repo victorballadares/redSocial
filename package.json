@@ -9,9 +9,22 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body": "^5.1.0",
+    "body-parser": "^1.20.0",
+    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "ejs": "^3.1.7",
     "express": "^4.18.1",
-    "firebase": "^9.7.0"
+    "express-validation": "^4.1.0",
+    "express-validator": "^6.14.0",
+    "firebase": "^9.7.0",
+    "firebase-admin": "^10.2.0",
+    "json": "^11.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "logger": "^0.0.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.16",
+    "token": "^0.1.0",
+    "web": "^0.0.2"
   }
 }

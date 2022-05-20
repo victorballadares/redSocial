@@ -4,31 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Red social</title>
+    <title>Rivas Roller</title>
     <link rel="stylesheet" href="/style.css">
     
 </head>
 <body>
 
-    <main>
-        <h1>Rivas Roller</h1>
-
+<main>
+    
+        <figure>
+            <img class="avatar" src="img/logo5.png" alt="Logo de Rivas Roller">
+        </figure>
+        <h1>Rivas Roller </h1>
         
-            <form action="/user/signIn" method="post">
-                <input id="user" type="text" name="email" placeholder="Introduce tu usuario" required>
-                <input id="password" type="password" name="password" placeholder="Introduce tu password" required>
-                <button>Sign in</button>
-            </form>
-            <button onclick="window.location.href='/user/recovery'">Recover password</button>
-        
+        <!--Formulario login-->
+        <form action="/user/signIn" method="post">
+            <!--user name-->
+            <input id="user" type="email" name="email" placeholder="Email" required>
+            <!--user password-->    
+            <input id="password" type="password" name="password" placeholder="Password" required>
+            <button >Sign in</button>
+        </form>
 
-        <div>
-            <button onclick="window.location.href='/user/new'">Sign Up</button>
+        <button id="btn_forgot" onclick="window.location.href='/user/recovery'">Forgot password?</button>
+        <p id="created_count">Create an account </p>
+        <button onclick="window.location.href='/user/new'">Sign Up</button>
+        <p id="or">Or</p>
+        <div class="alternative">
+            <button id="btn_alternative" ><img src="img/google.png "></button>
+            <button id="btn_alternative"><img src="img/github.png "></button>
         </div>
 
-        <div>
-            <button>Sign in with Google</button>
-            <button>Sign in with Github</button>
-        </div>
+   
         
-    </main>
+</main>

@@ -1,9 +1,9 @@
 //midleware para autenticación de jwt
 const jwt = require("jsonwebtoken");
 
-const verifyToken = (req, res, next) => {
-  console.log(req.cookies);  
-  const token = req.cookies['x-access-token'];
+const verifyToken = (req, res, next) => { 
+  const user = JSON.parse(req.cookies['user_info']);
+  const token = user['x-access-token'];
     
 
   if (!token) {

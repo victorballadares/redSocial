@@ -5,8 +5,10 @@ const jwtValidator = require('../jwtValidator');
 
 //Creamos las rutas
 router.get('/', jwtValidator,(req, res)=>{
-    res.send('main');
+    res.render('main.ejs');
 });
+
+
 
 
 module.exports = router;

@@ -27,6 +27,8 @@ main{
 }
 
 
+
+
 form{
     display: flex;
     flex-direction: column;
@@ -103,7 +105,6 @@ button{
 
 div{
     width: 100%;
-   
 }
 
 .alternative{
@@ -127,13 +128,83 @@ figure img{
     margin-top: 40px;
 }
 
+.content_publish{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.content_publish #img_user{
+    width: 160%;
+    height: 140%;
+    margin-top: -25px;
+}
+
+.content_publish .user_profile{
+   display: flex;
+   margin: 0px;
+}
+
+.content_publish .user_profile img{
+    margin: 10px;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50% ;
+    border: 2px solid black;
+}
 
 .img_avatar{
     width: 90px;
     height: 60px;
 }
-.img_avatar2{
-    width: 213px;
-    height: 135px;
+
+.publish{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.publish input{
+    border: none;
+    background-image: url(./img/search.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    border: none;
+    outline: 0px;
+    background-color: transparent;
+    border-bottom: 1px solid #fcfbfb;
+}
+
+.publish_text{
+    margin: -38px;
+    padding: 10px;
+}
+.publish_text_more_like{
+    padding: 4px;
+}
+
+.publish_text_all_comments {
+    margin:  0px;
+    margin-top: -13px;
+}
+
+.time_publish{
+    margin-top: -10px;
+}
+
+#name_app{
+    margin-top: -5px;
+}
+
+.like_and_coment{
+    line-height: 88px; 
+}
+.like_and_coment span{
+    margin: 10px;
 }
 

@@ -1,57 +1,57 @@
 <%- include('templates/header'); %>
 
 <main>
+    <h1 id="name_app">Rivas Roller</h1>
 
-    <div>
+    <div class="publish">
         <input type="search" name="search" placeholder="Search">
         
     </div>
 
     <!--Publicación-->
-    <div class="publish">
+    <div class="content_publish">
 
-        <div>
-            <h3 id="user"></h3>
+        <div class="user_profile">
             <img class="img_avatar" src="img/avatar.png" alt="Imagen de usuario">
-        </div>
-        
-        <div>
-            <img class="img_avatar2" src="img/avatar.png" alt="Imagen de publicación">
-            
-            
+            <p id="user">Name user</p>
         </div>
 
-        <div>
+
+        <figure>
+            <img id="img_user" src="img/avatar.png" alt="Imagen de publicación">
+        </figure>   
+        
+
+        
+        <div class="like_and_coment">
             <i class="fa-solid fa-heart"></i>
             <span id="number1">1</span>
 
             <link rel="coment">
+            <i class="fa-solid fa-comment"></i>
             <span id="number2">2</span>
         </div>
 
         <div class="publish_text">
-        <p>cualquier <a href="#">Más</a> </p>
-            
+            <p>Les gusta a Maria y 3 personas <a href="#">Más</a> </p>
         </div>
 
-        <div>
-            <a href="#">Mostrar los demás comentarios</a>
-        </div>
-
-        <div>
+        <div class="publish_text_more_like">
             <p>Comentarios con mas like</p>
         </div>
 
-        <div>
-            <p>tiempo de --Publicación--</p>
+        <div class="publish_text_all_comments">
+            <a href="#">Mostrar los demás comentarios</a>
         </div>
 
+        <div class="time_publish">
+            <p>Hace 2 horas</p>
+        </div>
 
+       
 
-
-
-
-
+        
+        
 
 
     </div>
@@ -61,6 +61,6 @@
     <!--A que hora-->
 
 
-</main>
+
 
 <%- include('templates/footer'); %>

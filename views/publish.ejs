@@ -1,0 +1,25 @@
+<%- include('templates/header'); %>
+
+<main>
+
+
+<form action="/main/publish" enctype="multipart/form-data" method="post">
+    <div>
+        <label for="fname">Introduce tu imagen:</label>
+        <input type="file" name ="fname" id="fname">
+    </div> 
+    
+    <div>
+        <label for="title">Titulo:</label>
+        <input type="text" name ="title" id="title">
+    </div>  
+    <button >Enviar</button>
+</form>
+
+
+
+
+
+
+
+<%- include('templates/footer'); %>
